@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ti:app xmlns:ti="http://ti.appcelerator.org">
-    <property name="ti.android.runtime">rhino</property>
+    <property name="ti.android.runtime">v8</property>
     <deployment-targets>
         <target device="mobileweb">false</target>
-        <target device="iphone">false</target>
-        <target device="ipad">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
         <target device="android">true</target>
         <target device="blackberry">false</target>
     </deployment-targets>
-    <sdk-version>1.8.2</sdk-version>
-    <id>tresurehunt.craftgear.net</id>
-    <name>tresurehunt</name>
+    <sdk-version>1.7.5</sdk-version>
+    <id>me.tidevs.tcp.v1.team5.tsuita</id>
+    <name>TsuiTa!</name>
     <version>1.0</version>
-    <publisher>shun</publisher>
-    <url>http://</url>
+    <publisher>TCPV1 TEAM5</publisher>
+    <url>https://github.com/craftgear/tcpv1/</url>
     <description>not specified</description>
-    <copyright>2012 by shun</copyright>
-    <icon>appicon.png</icon>
+    <copyright>2012 by TCPV1 TEAM5</copyright>
+    <icon>tsuita.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>
     <statusbar-style>default</statusbar-style>
     <statusbar-hidden>false</statusbar-hidden>
     <fullscreen>false</fullscreen>
-    <navbar-hidden>false</navbar-hidden>
-    <analytics>true</analytics>
+    <navbar-hidden>true</navbar-hidden>
+    <analytics>false</analytics>
     <guid>118d4123-1c23-44cb-a39e-444969ea5e1a</guid>
     <iphone>
         <orientations device="iphone">
@@ -31,11 +31,12 @@
         </orientations>
         <orientations device="ipad">
             <orientation>Ti.UI.PORTRAIT</orientation>
-            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
-            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
-            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <uses-sdk android:minSdkVersion="4"/>
+        </manifest>
+    </android>
     <modules/>
 </ti:app>
